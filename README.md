@@ -4,8 +4,7 @@
 
  User Management Application
  
-This project is a web application I wrote to improve myself. Using Spring MVC, MySQL, JDBC, Thymeleaf, HTML and Bootstrap technologies, I developed an application that performs user login, logout and session control, performs user add, delete, update and listing operations, and has note add, delete and listing pages. I also made the session filter with the configuration file.
-
+This project is a web application I wrote to improve myself. Using Spring MVC, MySQL, JDBC, Thymeleaf, HTML and Bootstrap technologies, I developed an application that performs user login, logout and session control, performs user add, delete, update and listing operations, and has note add, delete and listing pages. 
 Installation
 Follow the steps below to run the project:
 
@@ -35,7 +34,7 @@ Follow the steps below to use the app:
  
  User Management Application
  
-Bu proje, kendimi geliştirmek için yazdığım bir web uygulamasıdır. Spring MVC, MySQL, JDBC, Thymeleaf, HTML ve Bootstrap teknolojilerini kullanarak, kullanıcı girişi, çıkışı ve oturum kontrolü yapan, kullanıcı ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştiren ve not ekleme, silme ve listeleme sayfaları olan bir uygulama geliştirdim. Ayrıca, oturum filtresini yapılandırma dosyası ile yaptım.
+Bu proje, kendimi geliştirmek için yazdığım bir web uygulamasıdır. Spring MVC, MySQL, JDBC, Thymeleaf, HTML ve Bootstrap teknolojilerini kullanarak, kullanıcı girişi, çıkışı ve oturum kontrolü yapan, kullanıcı ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştiren ve not ekleme, silme ve listeleme sayfaları olan bir uygulama geliştirdim.
 
 Kurulum
 Projeyi çalıştırmak için aşağıdaki adımları izleyin:
