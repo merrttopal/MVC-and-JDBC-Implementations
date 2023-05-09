@@ -1,4 +1,4 @@
-# MVC-and-JDBC-Implementations
+# User Management Application
 
 
 
