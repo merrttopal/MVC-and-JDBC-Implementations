@@ -1,6 +1,7 @@
 package com.works.controllers;
 
 import com.works.props.Users;
+import com.works.services.TinkEncDec;
 import com.works.services.UserService;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,8 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequiredArgsConstructor
 public class HomeController {
-    UserService service = new UserService();
+
+    final  UserService service;
     int status = -1;
     String message = "";
     int uid = 0;
@@ -38,6 +40,9 @@ public class HomeController {
         status = -1;
         message = "";
         uid = 0;
+
+
+
         return "home";
     }
 
@@ -64,8 +69,7 @@ public class HomeController {
     public String userBack(@PathVariable int uid) {
         Users users = new Users();
         service.deleteUser(uid, 1);
-        UserService userService = new UserService();
-        userService.showUser(uid);
+        service.showUser(uid);
         return "redirect:/home";
     }
 
@@ -74,7 +78,6 @@ public class HomeController {
         service.updateUser(user);
         return "redirect:/home";
     }
-
 
 
 }

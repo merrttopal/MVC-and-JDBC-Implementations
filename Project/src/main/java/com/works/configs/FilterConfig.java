@@ -2,7 +2,9 @@ package com.works.configs;
 
 
 import com.works.props.Users;
+import com.works.services.TinkEncDec;
 import com.works.services.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 
 import  javax.servlet.*;
@@ -12,8 +14,10 @@ import  javax.servlet.http.HttpServletResponse;
 import  java.io.IOException;
 
 @Configuration
+@RequiredArgsConstructor
 public class FilterConfig implements Filter {
-    UserService userService = new UserService();
+    final UserService userService;
+    final TinkEncDec tinkEncDec;
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -21,7 +25,7 @@ public class FilterConfig implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
         String url = req.getRequestURI();
-        String freeUrls[] = {"/","/userLogin","/register","/userRegister"};
+        String freeUrls[] = {"/","/userLogin"};
         boolean loginStatus = true;
         for (String item :freeUrls){
             if(url.equals(item)){
@@ -35,8 +39,10 @@ public class FilterConfig implements Filter {
                 Cookie[] cookies = req.getCookies();
                 for (Cookie cookie : cookies){
                     if (cookie.getName().equals("user")){
-                        int val = Integer.parseInt(cookie.getValue());
+                        String plainText = tinkEncDec.decrypt(cookie.getValue());
+                        int val = Integer.parseInt(plainText);
                         Users u = userService.showUser(val);
+
                         if( u != null)
                         req.getSession().setAttribute("user",u);
                         break;
