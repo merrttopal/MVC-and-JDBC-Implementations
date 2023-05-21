@@ -7,6 +7,7 @@
 This project is a web application I wrote to improve myself. Using Spring MVC, MySQL, JDBC, Thymeleaf, HTML and Bootstrap technologies, I developed an application that performs user login, logout and session control, performs user add, delete, update and listing operations, and has note add, delete and listing pages. Data, cookies and sessions encrypted and secured with google-tink.
 
 Installation
+
 Follow the steps below to run the project:
 
  - Download or clone the project from GitHub.
@@ -16,6 +17,7 @@ Follow the steps below to run the project:
  - Navigate to http://localhost:8090 in your browser.
 
 Usage
+
 Follow the steps below to use the app:
 
  - If you are not a registered user, register by clicking the Register button.
@@ -38,6 +40,7 @@ Follow the steps below to use the app:
 Bu proje, kendimi geliştirmek için yazdığım bir web uygulamasıdır. Spring MVC, MySQL, JDBC, Thymeleaf, HTML ve Bootstrap teknolojilerini kullanarak, kullanıcı girişi, çıkışı ve oturum kontrolü yapan, kullanıcı ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştiren ve not ekleme, silme ve listeleme sayfaları olan bir uygulama geliştirdim. Google tink ile veriler, cookie'ler ve sessionlar şifrelendi güvenli hale getirildi.
 
 Kurulum
+
 Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
  - Projeyi GitHub'dan indirin veya klonlayın.
@@ -47,6 +50,7 @@ Projeyi çalıştırmak için aşağıdaki adımları izleyin:
  - Tarayıcınızda http://localhost:8090 adresine gidin.
 
 Kullanım
+
 Uygulamayı kullanmak için aşağıdaki adımları izleyin:
 
  - Kayıtlı bir kullanıcı değilseniz, Register butonuna tıklayarak kayıt olun.
