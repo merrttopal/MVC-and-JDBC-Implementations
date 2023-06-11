@@ -24,7 +24,7 @@ Follow the steps below to use the app:
  - If you are a registered user, login by clicking the Login link.
  - After logging in, you can view the user list by clicking on the home link. The list has pagination feature.
  - On the Users page, you can add a new user by clicking the Add User button.
- - On the Users page, you can update user information by clicking the Edit button next to each user.
+ - On the Users page, you can update user information by clicking the Update button next to each user.
  - On the Users page, you can delete the user by clicking the Delete button next to each user.
  - You can view the notes list by clicking on the Notes link.
  - On the Notes page, you can add a new note by clicking the Add Note button.
@@ -57,7 +57,7 @@ Uygulamayı kullanmak için aşağıdaki adımları izleyin:
  - Kayıtlı bir kullanıcıysanız, Login linkine tıklayarak giriş yapın.
  - Giriş yaptıktan sonra, Users linkine tıklayarak kullanıcı listesini görüntüleyebilirsiniz. Listede pagination özelliği vardır.
  - Users sayfasında, Add User butonuna tıklayarak yeni bir kullanıcı ekleyebilirsiniz.
- - Users sayfasında, her kullanıcının yanındaki Edit butonuna tıklayarak kullanıcı bilgilerini güncelleyebilirsiniz.
+ - Users sayfasında, her kullanıcının yanındaki Update butonuna tıklayarak kullanıcı bilgilerini güncelleyebilirsiniz.
  - Users sayfasında, her kullanıcının yanındaki Delete butonuna tıklayarak kullanıcıyı silebilirsiniz.
  - Notes linkine tıklayarak not listesini görüntüleyebilirsiniz.
  - Notes sayfasında, Add Note butonuna tıklayarak yeni bir not ekleyebilirsiniz.
